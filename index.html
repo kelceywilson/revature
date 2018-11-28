@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Foodar Home</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: darkslategray;
+    }
+    a:hover {
+      color: red;
+    }
+    body {
+      max-width: 725px;
+    }
+    footer {
+      background-color: rgb(244, 138, 138);
+      color: white;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+    li {
+      display: inline;
+    }
+    #banner {
+      position: absolute;
+    }
+    #image {
+      height: 100%;
+      width: 100%;
+    }
+    #try {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -75%);
+      color: white;
+      text-align: center;
+      font-size: 3em;
+      text-shadow: 1px 1px black;
+    }
+    .footer-column {
+      max-width: 33%;
+    }
+    .footer-column li {
+      display: block;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 20px;
+    }
+    .logo {
+      margin-right: auto;
+    }
+    .space {
+      margin: 0 5px;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 10px 0;
+    }
+    .copyright {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<header>
+  <div class="nav">
+    <img class="logo" src="logo.png" alt="logo">
+    <div id="banner"></div>
+    <div><a href="register.html">Register</a></div>
+    <div class="space">/</div>
+    <div><a href="#">Sign In</a></div>
+  </div>
+</header>
+
+<body>
+  <img id="image" src="foodar_meal.jpg" alt="main image">
+  <div id="try">TRY A NEW MEAL TODAY</div>
+  <h1>Find a driver near you!</h1>
+  <p>Type in your zipcode below and type Go! to find a driver near you</p>
+  <input id="zip-search" type="text" maxlength="5" placeholder="11111">
+  <button id="go">Go!</button>
+  <div id="answer"></div>
+
+  <script>
+    var zipInput = document.getElementById("zip-search")
+    var go = document.getElementById("go")
+    var answerDiv = document.getElementById("answer")
+
+    function zipCheck(zipcode) {
+      var zips = [94701, 94702, 94703, 94704, 94705, 94706, 94707, 94708, 94709, 94710, 94712, 94720]
+      for (let i = 0; i < zips.length; i++) {
+        if (zips[i] == zipcode) {
+          return "We\’ve got your area covered!";
+        }
+      }
+      return "Sorry, we haven\’t expanded to that area yet.";
+    }
+
+    go.addEventListener("click", function () {
+      var answer = zipCheck(zipInput.value)
+      answerDiv.innerHTML = answer
+    })
+    window.addEventListener('load', function () {
+      console.log('All assets are loaded')
+      var banner = '<img src="chimpy.gif" alt="advertisement"/>';
+      // var banner = "hi";
+      var adDiv = document.getElementById("banner");
+
+      adDiv.innerHTML = banner;
+      console.log(adDiv);
+    })
+  </script>
+
+</body>
+<footer>
+  <div class="flex">
+    <ul class="footer-column">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">How it all works</a></li>
+    </ul>
+    <ul class="footer-column">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+    <ul class="footer-column">
+      <li>Taste is the enemy of creativeness.</li>
+      <li>-Pablo Picasso</li>
+    </ul>
+  </div>
+  <div class="copyright">&copy;2018. All rights reserved.</div>
+</footer>
+
+</html>
+
+
+Create an advertisement banner that will be at the top
+An advertisement banner should be positioned at the top
+An advertising message should show at the top of the website.
+An image should display featuring a recipe
+the list of pages in the site should be on the left
+Now that you've restyled the footer on the Home page, update the footer on the About and Register pages.
+Now that you know about Timers, you can update the advertisement banner to display after 5 seconds.
+The banner should display while the user scrolls down the page and should include a button in the top-right corner of
+the banner that closes the banner when clicked.
+The button in the top-right corner should close the advertisement banner when a user clicks it.
+The banner can display any information that you want. Some users decide to include a link to the Request page, others
+display an ad from another company.
+
+
+
+BEFORE SUBMITTING YOUR PROJECT REVIEW YOUR CODE!
+
+Make sure that you have met all requirements and that your sourcecode is arranged according to the fileset provided.
+
+Compress your files into a .zip and upload it after this task.
+
+There is a button on the Dashboard in the project area that you will be able to click to Submit the project. Please
+remember to click this button as well.
+
+Your mentor will review your project and respond back to you.
+
+check against all wireframes not example site

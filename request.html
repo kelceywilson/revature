@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Request</title>
+  <style>
+    .choicebox {
+      width: 30%;
+      display: inline-block;
+      background: lightgrey;
+      border-radius: 5px;
+      text-align: center;
+      /* height: 100px; */
+      padding: 5px;
+    }
+    #group1, #group2 {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SUBMIT YOUR REQUEST</h1>
+  <p>Please fill out the form below:</p>
+  <form>
+    <p>Address:</p>
+    <input class="input" type="email" value="email" placeholder="Email" />
+    <p>Choose Your Style:</p>
+    <div id="group1">
+      <div class="choicebox">
+        <label for="style">
+          Classic<br>
+          This is a classic treatment<br>
+        </label>
+        <input type="radio" value="3" name="price" />
+      </div>
+      <div class="choicebox">
+        <label for="style">
+          Premium<br>
+          pinky's up<br>
+        </label>
+        <input type="radio" value="5" name="price" />
+      </div>
+      <div class="choicebox">
+        <label for="style">
+          Royal<br>
+          Your food is served on a silver platter. Literally.<br>
+        </label>
+        <input type="radio" value="10" name="price" />
+      </div>
+    </div>
+    <p>Restaurant:</p>
+    <input class="input" type="text" value="restaurant" name="restaurant" placeholder="Name" />
+    <p>Tip:</p>
+    <div id="group2">
+      <div class="choicebox">
+        <label for="style">
+          10%<br>
+          They did their job.<br>
+          <input type="radio" value=".1" name="tip" />
+      </div>
+      <div class="choicebox">
+        <label for="style">
+          15%<br>
+          They made you feel special.<br>
+          <input type="radio" value=".15" name="tip" />
+      </div>
+      <div class="choicebox">
+        <label for="style">
+          20%<br>
+          I wanna give them more, but this is all I have!<br>
+          <input type="radio" value=".2" name="tip" />
+      </div>
+    </div>
+    <h2>Total: $<span id="total">0.00</span></h2>
+    <input type="submit" value="REQUEST">
+  </form>
+  <script>
+    var total = 0
+    var price = 0
+    var tip = 0
+    var totalSpan = document.getElementById("total")
+    var priceSpan = document.getElementsByName("price")
+    var tipSpan = document.getElementsByName("tip")
+
+    function calculateTotal(price, tip) {
+      return (price + price * tip).toFixed(2);
+    }
+
+    for (var i = 0; i < priceSpan.length; i++) {
+      priceSpan[i].addEventListener("click", function (event) {
+        price = parseFloat(event.target.value);
+        totalSpan.innerHTML = calculateTotal(price, tip)
+      })
+    }
+
+    for (var i = 0; i < tipSpan.length; i++) {
+      tipSpan[i].addEventListener("click", function (event) {
+        tip = parseFloat(event.target.value);
+        totalSpan.innerHTML = calculateTotal(price, tip)
+      })
+    }
+  </script>
+</body>
+<footer>
+  <p>
+    &copy;2018
+  </p>
+</footer>
+
+</html>
+
+
+
+Furthermore, the client wants to
+
+highlight the restaurants that are featured on the home page. There will be a coupon that displays when the user hovers
+their mouse over the restaurant's picture that is displayed on the home page.
