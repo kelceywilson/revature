@@ -1,3 +1,106 @@
 html {
+  width: 100%;
+}
 
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+a:hover {
+  color: red;
+}
+
+footer {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  display: inline;
+}
+
+#answer {
+  margin: 20px 0;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#image {
+  background-image: url("foodar_meal.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+#try {
+  color: white;
+  text-align: center;
+  padding: 100px 50px;
+  font-size: 3em;
+  text-shadow: 1px 1px black;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  top: -145px;
+  right: 25px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copyright {
+  display: flex;
+  font-size: .8em;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.footer-column {
+  max-width: 33%;
+}
+
+.footer-column li {
+  display: block;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.space {
+  margin: 0 5px;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
 }

@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Register</title>
+  <title>Register</title>
+  <link rel="stylesheet" href="layout.css">
+
 </head>
+
 <body>
   <h1>Foodar<h1>
-  <h1>Register</h1>
-  <p>Please fill out the form below:</p>
-  <form>
-    <div>
-      <p>Details:</p>
-      <input class="input" type="email" placeholder="Email" />
-      <input class="input" type="password" placeholder="Password" />
-      <input class="input" type="text" placeholder="First Name" />
-      <input class="input" type="text" placeholder="Last Name" />
-      <p>Address:</p>
-      <input class="input" type="text" placeholder="Address" />
-      <input class="input" type="text" placeholder="Street" />
-      <input class="input" type="text" placeholder="City" />
-      <input class="input" type="text" placeholder="Zipcode" />
-      <input class="input" type="submit" value="Register"/>
-    </div>
-  </form>
+      <h1>Register</h1>
+      <p>Please fill out the form below:</p>
+      <form>
+        <div>
+          <p>Details:</p>
+          <input class="input" type="email" placeholder="Email" />
+          <input class="input" type="password" placeholder="Password" />
+          <input class="input" type="text" placeholder="First Name" />
+          <input class="input" type="text" placeholder="Last Name" />
+          <p>Address:</p>
+          <input class="input" type="text" placeholder="Address" />
+          <input class="input" type="text" placeholder="Street" />
+          <input class="input" type="text" placeholder="City" />
+          <input class="input" type="text" placeholder="Zipcode" />
+          <input class="input" type="submit" value="Register" />
+        </div>
+      </form>
 
 </body>
+<hr>
 <footer>
-  <p>
-    &copy;2018
-  </p>
+  <div class="space-around">
+    <ul class="footer-column">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="about.html">How it all works</a></li>
+    </ul>
+    <ul class="footer-column">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+    </ul>
+    <ul class="footer-column">
+      <li>Taste is the enemy of creativeness.</li>
+      <li>-Pablo Picasso</li>
+    </ul>
+  </div>
 </footer>
+<script src="script.js"></script>
+<div class="copyright">&copy;2018. All rights reserved.</div>
+
 </html>
 
 
 form labels should be aligned (vertical-align) to the top of associated <input> elements
 Add padding to each <input> to provide white space between the input boundaries and contained text
-Form elements should be side-by-side; you can float elements if needed. You should end up with 2 columns of input elements.
+Form elements should be side-by-side; you can float elements if needed. You should end up with 2 columns of input
+elements.
 
 An additional requirement that we've received is to add a <footer> to the page.
 
-You should update both the About page and the Register page to have a footer that meets the following:
+  You should update both the About page and the Register page to have a footer that meets the following:
 
-Use the <footer> element to hold information pertaining to the footer
-include a vertical navigational list of other pages
-include copyright information
-use &copy; to render the copyright symbol
-NOTE: If you want to have different sections like the showcase project, then you can wrap your sections with <div> elements and change the display property to inline-block. This way you can alter the width/height as well and the sections will be laid out side-by-side.
+  Use the <footer> element to hold information pertaining to the footer
+    include a vertical navigational list of other pages
+    include copyright information
+    use &copy; to render the copyright symbol
+    NOTE: If you want to have different sections like the showcase project, then you can wrap your sections with <div>
+      elements and change the display property to inline-block. This way you can alter the width/height as well and the
+      sections will be laid out side-by-side.
