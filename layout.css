@@ -52,6 +52,18 @@ li {
   text-shadow: 1px 1px black;
 }
 
+.flex-column {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-content: center; */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .close {
   color: #aaa;
   font-size: 28px;
@@ -83,6 +95,12 @@ li {
   display: block;
 }
 
+.input {
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+}
+
 .logo {
   margin-right: auto;
 }
@@ -103,4 +121,9 @@ li {
   justify-content: space-around;
   width: 100%;
   margin: 10px 0;
+}
+
+.width60 {
+  max-width: 60%;
+  margin: auto;
 }
