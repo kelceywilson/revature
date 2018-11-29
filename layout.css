@@ -11,6 +11,12 @@ a:hover {
   color: red;
 }
 
+button {
+  display: flex;
+  justify-self: center;
+  background-color: red;
+}
+
 footer {
   display: flex;
 }
@@ -126,4 +132,23 @@ li {
 .width60 {
   max-width: 60%;
   margin: auto;
+}
+
+/* request.html */
+
+.choicebox {
+  width: 30%;
+  display: inline-block;
+  background: lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  /* height: 100px; */
+  padding: 5px;
+}
+
+#group1,
+#group2 {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
 }

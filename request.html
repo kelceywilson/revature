@@ -4,28 +4,11 @@
 <head>
   <title>Request</title>
   <link rel="stylesheet" href="layout.css">
-
-  <style>
-    .choicebox {
-      width: 30%;
-      display: inline-block;
-      background: lightgrey;
-      border-radius: 5px;
-      text-align: center;
-      /* height: 100px; */
-      padding: 5px;
-    }
-    #group1, #group2 {
-      display: flex;
-      width: 80%;
-      justify-content: space-between;
-    }
-  </style>
 </head>
 <header>
   <hr>
   <div class="nav">
-    <img class="logo" src="logo.png" alt="logo">
+    <a class="logo" href="index.html"><img src="logo.png" alt="logo"></a>
     <div><a href="register.html">Register</a></div>
     <div class="space">/</div>
     <div><a href="#">Sign In</a></div>
@@ -89,32 +72,7 @@
     <h2>Total: $<span id="total">0.00</span></h2>
     <input type="submit" value="REQUEST">
   </form>
-  <script>
-    var total = 0
-    var price = 0
-    var tip = 0
-    var totalSpan = document.getElementById("total")
-    var priceSpan = document.getElementsByName("price")
-    var tipSpan = document.getElementsByName("tip")
 
-    function calculateTotal(price, tip) {
-      return (price + price * tip).toFixed(2);
-    }
-
-    for (var i = 0; i < priceSpan.length; i++) {
-      priceSpan[i].addEventListener("click", function (event) {
-        price = parseFloat(event.target.value);
-        totalSpan.innerHTML = calculateTotal(price, tip)
-      })
-    }
-
-    for (var i = 0; i < tipSpan.length; i++) {
-      tipSpan[i].addEventListener("click", function (event) {
-        tip = parseFloat(event.target.value);
-        totalSpan.innerHTML = calculateTotal(price, tip)
-      })
-    }
-  </script>
 </body>
 <hr>
 <footer>
@@ -134,7 +92,7 @@
     </ul>
   </div>
 </footer>
-<script src="script.js"></script>
+<script src="./scripts/request.js"></script>
 <div class="copyright">&copy;2018. All rights reserved.</div>
 
 </html>

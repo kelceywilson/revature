@@ -19,10 +19,10 @@ function zipCheck(zipcode) {
   ];
   for (let i = 0; i < zips.length; i++) {
     if (zips[i] == zipcode) {
-      return "We’ve got your area covered!";
+      return "We have your area covered! <a href='request.html'><button>Request driver now</button></a>";
     }
   }
-  return "Sorry, we haven’t expanded to that area yet.";
+  return "Sorry, we have not expanded to that area yet.";
 }
 
 go.addEventListener("click", function() {
