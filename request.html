@@ -17,61 +17,67 @@
 </header>
 
 <body>
-  <h1>SUBMIT YOUR REQUEST</h1>
-  <p>Please fill out the form below:</p>
-  <form>
-    <p>Address:</p>
-    <input class="input" type="email" value="email" placeholder="Email" />
-    <p>Choose Your Style:</p>
-    <div id="group1">
-      <div class="choicebox">
-        <label for="style">
-          Classic<br>
-          This is a classic treatment<br>
-        </label>
-        <input type="radio" value="3" name="price" />
-      </div>
-      <div class="choicebox">
-        <label for="style">
-          Premium<br>
-          pinky's up<br>
-        </label>
-        <input type="radio" value="5" name="price" />
-      </div>
-      <div class="choicebox">
-        <label for="style">
-          Royal<br>
-          Your food is served on a silver platter. Literally.<br>
-        </label>
-        <input type="radio" value="10" name="price" />
-      </div>
+  <div class="marginAuto70">
+    <h1>SUBMIT YOUR REQUEST</h1>
+    <p>Please fill out the form below:</p>
+    <div class="flex-center">
+      <form>
+        <p>Address:</p>
+        <input class="input" type="email" placeholder="Email" />
+        <p>Choose Your Style:</p>
+        <div id="group1">
+          <div class="choicebox">
+            <label for="style">
+              Classic<br>
+              This is a classic treatment<br>
+            </label>
+            <input type="radio" value="3" name="price" />
+          </div>
+          <div class="choicebox">
+            <label for="style">
+              Premium<br>
+              pinky's up<br>
+            </label>
+            <input type="radio" value="5" name="price" />
+          </div>
+          <div class="choicebox">
+            <label for="style">
+              Royal<br>
+              Your food is served on a silver platter. Literally.<br>
+            </label>
+            <input type="radio" value="10" name="price" />
+          </div>
+        </div>
+        <p>Restaurant:</p>
+        <input class="input" type="text" name="restaurant" placeholder="Name" />
+        <p>Tip:</p>
+        <div id="group2">
+          <div class="choicebox">
+            <label for="style">
+              10%<br>
+              They did their job.<br>
+              <input type="radio" value=".1" name="tip" />
+          </div>
+          <div class="choicebox">
+            <label for="style">
+              15%<br>
+              They made you feel special.<br>
+              <input type="radio" value=".15" name="tip" />
+          </div>
+          <div class="choicebox">
+            <label for="style">
+              20%<br>
+              I wanna give them more, but this is all I have!<br>
+              <input type="radio" value=".2" name="tip" />
+          </div>
+        </div>
+        <div class="flex-center">
+          <div class="total">Total: $<span id="total">0.00</span></div>
+          <input class="button" type="submit" value="REQUEST">
+        </div>
+      </form>
     </div>
-    <p>Restaurant:</p>
-    <input class="input" type="text" value="restaurant" name="restaurant" placeholder="Name" />
-    <p>Tip:</p>
-    <div id="group2">
-      <div class="choicebox">
-        <label for="style">
-          10%<br>
-          They did their job.<br>
-          <input type="radio" value=".1" name="tip" />
-      </div>
-      <div class="choicebox">
-        <label for="style">
-          15%<br>
-          They made you feel special.<br>
-          <input type="radio" value=".15" name="tip" />
-      </div>
-      <div class="choicebox">
-        <label for="style">
-          20%<br>
-          I wanna give them more, but this is all I have!<br>
-          <input type="radio" value=".2" name="tip" />
-      </div>
-    </div>
-    <h2>Total: $<span id="total">0.00</span></h2>
-    <input type="submit" value="REQUEST">
-  </form>
+  </div>
 
 </body>
 <hr>
@@ -96,10 +102,3 @@
 <div class="copyright">&copy;2018. All rights reserved.</div>
 
 </html>
-
-
-
-Furthermore, the client wants to
-
-highlight the restaurants that are featured on the home page. There will be a coupon that displays when the user hovers
-their mouse over the restaurant's picture that is displayed on the home page.

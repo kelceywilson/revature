@@ -3,6 +3,10 @@
 An image should display featuring a recipe
 the list of pages in the site should be on the left
 
+Furthermore, the client wants to
+
+highlight the restaurants that are featured on the home page. There will be a coupon that displays when the user hovers
+their mouse over the restaurant's picture that is displayed on the home page.
 BEFORE SUBMITTING YOUR PROJECT REVIEW YOUR CODE!
 
 Make sure that you have met all requirements and that your sourcecode is arranged according to the fileset provided.

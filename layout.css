@@ -4,17 +4,25 @@ html {
 
 a {
   text-decoration: none;
-  color: darkslategray;
+  color: royalblue;
 }
 
 a:hover {
   color: red;
 }
 
-button {
-  display: flex;
-  justify-self: center;
-  background-color: red;
+button,
+.button {
+  background-color: rgb(250, 250, 203);
+  height: 35px;
+  width: 135px;
+  border-radius: 5px;
+  /* border: none; */
+  /* box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2); */
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline;
 }
 
 footer {
@@ -44,6 +52,12 @@ li {
   width: 100%;
 }
 
+#group1,
+#group2 {
+  display: flex;
+  justify-content: space-between;
+}
+
 #image {
   background-image: url("foodar_meal.jpg");
   background-position: 50% 50%;
@@ -58,16 +72,14 @@ li {
   text-shadow: 1px 1px black;
 }
 
-.flex-column {
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  /* align-content: center; */
-}
-
-.center {
-  display: flex;
-  justify-content: center;
+.choicebox {
+  width: 30%;
+  display: inline-block;
+  background: lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  /* height: 100px; */
+  padding: 5px;
 }
 
 .close {
@@ -93,6 +105,17 @@ li {
   margin-top: 40px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-column {
   max-width: 33%;
 }
@@ -102,13 +125,23 @@ li {
 }
 
 .input {
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
-  width: 30%;
+  border-radius: 5px;
 }
 
 .logo {
   margin-right: auto;
+}
+
+.marginAuto70 {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.marginAuto100 {
+  margin: 0 auto;
+  width: 100%;
 }
 
 .nav {
@@ -129,26 +162,22 @@ li {
   margin: 10px 0;
 }
 
+.total {
+  display: inline;
+  font-size: 1.4em;
+  font-weight: bold;
+  /* margin: 0 auto; */
+  /* width: 80%; */
+  margin: 15px 10px;
+
+}
+
 .width60 {
   max-width: 60%;
   margin: auto;
 }
 
-/* request.html */
-
-.choicebox {
-  width: 30%;
-  display: inline-block;
-  background: lightgrey;
-  border-radius: 5px;
-  text-align: center;
-  /* height: 100px; */
-  padding: 5px;
-}
-
-#group1,
-#group2 {
+.zip-form {
   display: flex;
-  width: 80%;
-  justify-content: space-between;
+  justify-content: center;
 }
