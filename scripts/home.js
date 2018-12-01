@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
     ];
     for (let i = 0; i < zips.length; i++) {
       if (zips[i] == zipcode) {
-        return "We have your area covered! <a href='request.html'><button>Request driver now</button></a>";
+        return "We have your area covered! <a href='request.html'><button>Request Driver Now</button></a>";
       }
     }
     return "Sorry, we have not expanded to that area yet.";
